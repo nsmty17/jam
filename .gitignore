@@ -1,0 +1,12 @@
+__pycache__
+node_modules
+.DS_Storenode_modules/
+.DS_Store
+.env
+.env.*
+__pycache__/
+*.pyc
+dist/
+build/
+coverage/
+
