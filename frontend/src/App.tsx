@@ -9,28 +9,29 @@ import useApi from "./utils/useApi";
 
 const darkTheme = createTheme({
   palette: {
-    mode: "dark",
+    mode: "light",
     background: {
       default: "#ffc0cb", // Light pink background
+      paper: "#ffffff",
     },
     text: {
-      primary: "#000000", // Black text for better readability
-      secondary: "#333333", // Dark gray for secondary text
+      primary: "#000000",
+      secondary: "#333333",
     },
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          color: "#000000", // Black text for buttons
+          color: "#000000", // black text only, keep default contained bg
         },
       },
     },
     MuiDialog: {
       styleOverrides: {
         paper: {
-          backgroundColor: "#ffffff", // White background for modals
-          color: "#000000", // Black text in modals
+          backgroundColor: "#ffffff",
+          color: "#000000",
         },
       },
     },
@@ -38,12 +39,12 @@ const darkTheme = createTheme({
       styleOverrides: {
         root: {
           "& .MuiPaper-root": {
-            backgroundColor: "#ffffff", // White background for modal content
-            color: "#000000", // Black text in modals
+            backgroundColor: "#ffffff",
+            color: "#000000",
           },
         },
       },
-    },
+  },
   },
 });
 
